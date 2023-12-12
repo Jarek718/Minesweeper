@@ -304,7 +304,7 @@ class Program
   
   public static void printMap(char[,] map)
   {
-    string fullMap ="  : ";
+    string fullMap="     ";
     for(int i = 0; i < map.GetLength(1); i++)
     {
       fullMap += (char)(i+65);
@@ -314,7 +314,10 @@ class Program
     
     for(int i = 0; i < map.GetLength(0); i++)
     {
-      string row = i+" : ";
+      string rowInput = ""+i;
+      if(i.ToString().Length < 2)
+        rowInput = "0"+i;
+      string row = rowInput+" : ";
       for(int j = 0; j < map.GetLength(1); j++)
       {
         row += map[i,j];
