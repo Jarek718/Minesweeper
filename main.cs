@@ -113,7 +113,7 @@ class Program
     }
     else if(input.Contains("!MAP"))
     {
-      printMap(foregroundMap);
+      printMap(backgroundMap);
     }
     else
     {
@@ -144,7 +144,7 @@ class Program
     Random rng = new Random();
     minedPositions = new int[mines,2];
     
-    for(int i = 0; i<10; i++)
+    for(int i = 0; i<mines; i++)
     {
       int rngRow = rng.Next(rows);
       int rngCol = rng.Next(cols);
