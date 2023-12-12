@@ -113,7 +113,7 @@ class Program
     }
     else if(input.Contains("!MAP"))
     {
-      printMap(backgroundMap);
+      printMap(foregroundMap);
     }
     else
     {
